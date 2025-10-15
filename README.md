@@ -1,4 +1,4 @@
-# CS121 Project 6
+# CS121 Project 7
 
 ```mermaid
 classDiagram
@@ -43,3 +43,22 @@ Student --> Date
 
 ## Goal
 * Normalize data with three classes (date, address, student).
+
+## Input
+* void init(dateString) splits on "/" and stores integer fields. toLongString() uses a month-name table to print an output like "January 27, 1997".
+* void init(getString) splits the line by commas into 9 different types of data in this order: first, last, street, city, state, zip, dob, grad, credits.
+
+## Printing
+* address::printAddress() prints two lines
+  * street
+  * city state, zip
+* printDate() prints 
+  * month day, year
+* printStudent() prints
+  * first last
+  * address (two lines)
+  * DOB: dob
+  * Grad: grad
+  * Credits: credits
+  * line of underscores
+  * last, first
