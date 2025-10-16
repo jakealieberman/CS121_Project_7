@@ -62,7 +62,7 @@ void Student::printStudent() const {
     std::cout << "Credits: " << credits << std::endl;
 }
 
-// returns last, first format
+// returns last, first 
 std::string Student::getLastFirst() const {
     return lastName + ", " + firstName;
 }
