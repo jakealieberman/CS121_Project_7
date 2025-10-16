@@ -19,11 +19,9 @@ std::string menu();
 int main() {
     // holds all student objects
     std::vector<Student*> students;
-    // load students.csv (same directory)
-    // load students from file
+    // load students.csv 
     loadStudents(students, "students.csv");
     // menu loop
-    // main menu loop
     while (true) {
         std::string choice = menu();
 
@@ -82,7 +80,7 @@ void findStudent(const std::vector<Student*>& students) {
 
     bool foundAny = false;
     for (const Student* s : students) {
-        if (s->getLastName() == last) { // exact match as requested
+        if (s->getLastName() == last) { // exact match
             s->printStudent();
             std::cout << "____________________________________" << std::endl;
             foundAny = true;
